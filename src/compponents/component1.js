@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 const Component1 = () => {
+  
   const [countSecond, setCountSecond] = useState(0)
   const [countThird, setCountThird] = useState(0)
   const [countFourth, setCountFourth] = useState(0)
