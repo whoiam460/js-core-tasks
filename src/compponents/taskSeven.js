@@ -1,4 +1,6 @@
+
 import { useState } from 'react'
+
 
 const TaskSeven = props => {
   const { name, array } = props
