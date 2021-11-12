@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 
 const TaskTen = () => {
@@ -6,11 +7,11 @@ const TaskTen = () => {
   let wrapperPercent = wrapperWidth / 100
 
   const add = () => {
-    if (progres < wrapperWidth) setProgres(progres + wrapperPercent *10 )
+    if (progres < wrapperWidth) setProgres(progres + wrapperPercent * 10)
   }
 
   const remove = () => {
-    if (progres > 0) setProgres(progres - wrapperPercent *10 )
+    if (progres > 0) setProgres(progres - wrapperPercent * 10)
   }
 
   const getValue = e => {
