@@ -1,13 +1,14 @@
-import React, { useState } from "react"
-import { FaStar } from "react-icons/fa"
 
-import "./taskThirteen.css"
+import React, { useState } from 'react'
+import { FaStar } from 'react-icons/fa'
+
+import './taskThirteen.css'
 
 const TaskThirteen = ({ maxStars }) => {
   const [value, setValue] = useState(null)
 
   return (
-    <div >
+    <div>
       {[...Array(+maxStars)].map((item, i) => {
         let ratingValue = i + 1
         return (
@@ -19,7 +20,7 @@ const TaskThirteen = ({ maxStars }) => {
               value={ratingValue}
               onClick={() => setValue(ratingValue)}
             />
-            <FaStar color={ratingValue <= value ? "#FFD700" : "#808080"} />
+            <FaStar color={ratingValue <= value ? '#FFD700' : '#808080'} />
           </label>
         )
       })}
