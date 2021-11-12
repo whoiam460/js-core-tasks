@@ -7,7 +7,7 @@ const Pagination = ({countArticles, limit}) =>{
         <>
             <nav>
         <ul className="pagination">
-            <li className="page-item"><a className="page-link" href="#">Previous</a></li>
+            <li className="page-item">  <a className="page-link" href="#">Previous</a></li>
  
             { [...Array(countPage)].map( (item, i) => <li className="page-item"><a className="page-link" href="#">{i+1}</a></li> ) }    
            
